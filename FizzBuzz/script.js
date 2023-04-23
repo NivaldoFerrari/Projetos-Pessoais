@@ -1,6 +1,3 @@
-//Criar um carrosel ou display
-//criar um algoritimo FizzBuzz que receba parametros e tenha timer.
-// imprimir isso na parte de tras do site ao mesmo tempo que no display.
 
 
 function fizzBuzz(entrada){
