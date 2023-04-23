@@ -16,7 +16,7 @@ function verificarVelocidade(velocidade) {
 
         const pontos = Math.floor(((velocidade - velocidadeMax) / proporcaoPontos));
         if (pontos >= pontosMax){
-            console.log('Carteira Suspença')
+            console.log('Carteira Suspensa')
         } else {
             console.log('Pontos', pontos)
         }
