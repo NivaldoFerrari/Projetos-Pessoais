@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre as tags code e pre</title>
+</head>
+<body>
+
+    <p>Usadas geralmente quando que ser exibir codgo no navegador</p>
+    <p>Igual o exemplo abaixo</p>
+
+
+    <!-- Destaca e muda a fonte -->
+    <!-- Displai inline -->
+    <code>
+        function desenha() {
+            var canvas = document.getElementById('canvas');
+            var cxt = canvas.getContext('2d');
+            cxt.fillRect(25, 25, 100, 100);
+    }
+    </code>
+
+    <p>Porem a formatacao n fica agradavel podemos resolver isso usando br ou pre</p>
+    
+    <!-- Display block -->
+    <pre>
+        <code>
+
+            function desenha() {
+                var canvas = document.getElementById('canvas');
+                var cxt = canvas.getContext('2d');
+                cxt.fillRect(25, 25, 100, 100);
+            } 
+
+        </code>
+    </pre>
+
+</body>
+</html>
