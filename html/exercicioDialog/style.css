@@ -1,0 +1,38 @@
+dialog {
+    padding: 0;
+    border: 0;
+    border-radius: 7px;
+    box-shadow: 0 0 10px black;
+    flex-direction: column;
+}
+.dialog-tit{
+    background-color: #eee;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    padding: 0.3em;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #aaa;
+    height: 40px;
+}
+.corpo-dialog{
+    background-color: #fff;
+    padding: 7px;
+}
+.dialog-rodape{
+    background-color: #fff;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    padding: 7px;
+    border-top: 1px solid #aaa;
+
+}
+#btn-fechar{
+    border: none;
+    border-radius: 7px;
+    padding: 7px;
+    cursor: pointer;
+}
+#btn-fechar:hover{
+    background-color: #fafafa;
+}
