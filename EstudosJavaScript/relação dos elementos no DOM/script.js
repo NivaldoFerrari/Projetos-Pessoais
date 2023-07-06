@@ -10,3 +10,14 @@ console.log(caixa1.lastElementChild)//outra maneira de ultimo filho
 
 
 console.log(document.getRootNode())//Retorna o no raiz
+
+// children retorna os elementos filhos
+console.log(caixa1.children.length > 0 ? "Possui Filhos" : "Não Possui Filhos")
+
+console.log(elemento[0].children.length > 0 ? "Possui Filhos" : "Não Possui Filhos")
+
+//mudando o conteudo da pagina
+caixa1.firstElementChild.innerHTML="Mudar"
+
+
+console.log(elemento[5].parentNode.children[4])//saindo de um elementro para outro
