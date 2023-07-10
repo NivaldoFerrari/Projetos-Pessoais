@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+button{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(14, 14, 119);
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.curso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    border: 4px solid rgb(146, 145, 145);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.selecionado{
+    background-color: #800;
+    color: #fcc;
+    border-color: #f00;
+}
+.caixa{
+    border: 4px solid black;
+    background-color: #eee;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    height: 500px;
+    width: 300px;
+}
+.caixaFunc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+}
+#caixaNovoCurso input, button{
+    margin: 10px;
+    padding: 5px;
+}
