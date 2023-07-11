@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    font-size: large;
+}
+body{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+.caixa{
+    border: 5px solid #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+    width: 60%;
+    height: 120px;
+}
+.verde{
+    border-color: green !important;
+    background-color: #82b1a1 !important;
+}
+.azul{
+    border-color: rgb(43, 57, 138) !important;
+    background-color: #8f92b6 !important;
+}
+.vermelho{
+    border-color: rgb(158, 27, 27) !important;
+    background-color: #862f33 !important;
+}
+button{
+    width: 150px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+#caixa_pesquisa input{
+    padding: 10px;
+    border-radius: 5px;
+    width: 90%;
+    background-color: rgb(141, 139, 255);
+}
