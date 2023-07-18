@@ -1,54 +1,37 @@
-const caixaCursos=document.querySelector(".caixa")
+const btn_soma=document.querySelector("#btn_soma")
+const btn_subtracao=document.querySelector("#btn_subtracao")
+const btn_multiplicacao=document.querySelector("#btn_multipicacao")
+const btn_divisao=document.querySelector("#btn_divisao")
+const res=document.querySelector("#res")
 
-const funcoes=["Valor1","valor2","Resultado"]
+function pegarValores(){
+    const valores=[document.getElementById("valor1").value,document.getElementById("valor2").value]
+    return valores
+}
 
-funcoes.map((elemento)=>{
-    const paragrafo=document.createElement("div")
-    paragrafo.innerHTML=elemento
-    const label=document.createElement("label")
-    paragrafo.appendChild(label)
-    caixaCursos.appendChild(paragrafo)
-})
 
-let valores=[1,2,3,4,5]
 const op=[
-    (valores)=>{
-        let res=0
-        for(v of valores){
-            res+=v
-        }
-        return res
+    ()=>{
+     const valoresOpreracao=pegarValores()
+     res.value=Number(valoresOpreracao[0])+Number(valoresOpreracao[1])
     },
-    (valores)=>{
-        let res=0
-        for(v of valores){
-            res-=v
-        }
-        return res
-    },    
-    (valores)=>{
-        let res=1
-        for(v of valores){
-            res*=v
-        }
-        return res
+    ()=>{
+        const valoresOpreracao=pegarValores()
+        res.value=Number(valoresOpreracao[0])-Number(valoresOpreracao[1])
     },
-    (valores)=>{
-        let res=1
-        for(v of valores){
-            res/=v
-        }
-        return res
-    }
+    ()=>{
+        const valoresOpreracao=pegarValores()
+        res.value=Number(valoresOpreracao[0])*Number(valoresOpreracao[1])
+    },
+    ()=>{
+        const valoresOpreracao=pegarValores()
+        res.value=Number(valoresOpreracao[0])/Number(valoresOpreracao[1])
+    },
    
 ]
 
+btn_soma.addEventListener("click",()=>{op[0]()})
+btn_subtracao.addEventListener("click",()=>{op[1]()})
+btn_multiplicacao.addEventListener("click",()=>{op[2]()})
+btn_divisao.addEventListener("click",()=>{op[3]()})
 
-const operadoes=["+","-","*","/",]
-let operadoresMap=0
-op.map(()=>{
-    const botoes=document.createElement("button")
-    botoes.innerHTML=operadoes[operadoresMap]
-    operadoresMap++
-    caixaCursos.appendChild(botoes)
-})
