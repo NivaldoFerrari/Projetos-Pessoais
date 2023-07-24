@@ -1,77 +1,50 @@
-class Carro{
-    constructor(nome,tipo){
-        this.nome=nome
-        if(tipo==1){
-            this.tipo="Esportivo"
-            this.vMax=404
-        }else if(tipo==2){
-            this.tipo="Utilitário"
-            this.vMax=120
-        }else if(tipo==3){
-            this.tipo="Passeio"
-            this.vMax=150
-        }else{
-            this.tipo="Militar"
-            this.vMax=180
-        }
+class Pessoa{
+    constructor(pnome,pidade){
+        this.nome=pnome
+        this.idade=pidade
+
     }
     getNome(){
         return this.nome
     }
-    getTipo(){
-        return this.tipo
-    }
-    getVelocidade(){
-        return this.vMax
-    }
-    getInfo(){
-        return [this.nome,this.tipo,this.vMax]
+    getIdade(){
+        return this.idade
     }
     setNome(nome){
         this.nome=nome
     }
-    setTipo(tipo){
-        this.tipo=tipo
-    }
-    setvMax(vMax){
-        this.vMax=vMax
+    setIdade(idade){
+        this.idade=idade
     }
     info(){
         console.log(`Nome: ${this.nome}`)
-        console.log(`Tipo: ${this.tipo}`)
-        console.log(`V.Maxima: ${this.vMax}`)
+        console.log(`Idade: ${this.idade}`)
     }
 }
 
-let carr01=new Carro("Mareia",1)
-let carr02=new Carro("sw4",2)
-let carr03=new Carro("Astra",3)
-let carr04=new Carro("Gurgel",4)
+let pessoas=[]
 
-console.log(carr01)
-console.log(carr02)
-console.log(carr03)
-console.log(carr04)
+const btn_add=document.querySelector("#btn_add")
+const res=document.querySelector(".res")
 
-carr01.info()
-carr02.info()
-carr03.info()
-carr04.info()
+const addPessoas=()=>{
+    res.innerHTML=""
+    pessoas.map((p)=>{
+        const div=document.createElement("div")
+        div.setAttribute("class","pessoa")
+        div.innerHTML=`Nome:${p.getNome()}<br/>Idade:${p.getIdade()}`
+        res.appendChild(div)
+    })
+}
 
-console.log(carr01.getNome())
-console.log(carr02.getTipo())
-console.log(carr03.getVelocidade())
-
-console.log(carr04.getInfo())
-
-carr01.setNome("Ferrari")
-
-console.log(carr01.getInfo())
-
-carr02.setTipo("Passeio")
-
-console.log(carr02.getInfo())
-
-carr03.setvMax(99)
-
-console.log(carr03.getInfo())
+btn_add.addEventListener("click",(evento)=>{
+    const nome=document.querySelector("#f_name")
+    const idade=document.querySelector("#f_idade")
+    const p=new Pessoa(nome.value,idade.value)
+    pessoas.push(p)
+    nome.value=""
+    idade.value=""
+    nome.focus 
+    console.log(pessoas)
+    addPessoas()
+})
