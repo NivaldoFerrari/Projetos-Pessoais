@@ -1,7 +1,9 @@
 const tipoMilitar=document.querySelector("#f_tipoMilitar")
 const tipoNormal=document.querySelector("#f_tipoNormal")
 
-tipoMilitar.addEventListener("")
+tipoMilitar.addEventListener("click",()=>{
+    console.log("teste")
+})
 
 class Carro{//Classe PAI / BASE
     constructor(nome,portas){
