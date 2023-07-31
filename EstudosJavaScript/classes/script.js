@@ -1,8 +1,50 @@
 const tipoMilitar=document.querySelector("#f_tipoMilitar")
 const tipoNormal=document.querySelector("#f_tipoNormal")
+const f_blindagem=document.querySelector("#f_blindagem")
+const f_municao=document.querySelector("#f_municao")
+const painelCarros=document.querySelector("#carros")
+const btn_addCarro=document.querySelector("#btn_addCarro")
+const f_nome=document.querySelector("#f_nome")
+const f_portas=document.querySelector("#f_portas")
 
-tipoMilitar.addEventListener("click",()=>{
-    console.log("teste")
+const carros=[]
+
+tipoMilitar.addEventListener("click",(eento)=>{
+    f_nome.value=""
+    f_portas.value=0
+    f_blindagem.value=0
+    f_municao.value=0
+    f_blindagem.removeAttribute("disabled")
+    f_municao.removeAttribute("disabled")
+})
+tipoNormal.addEventListener("click",(eento)=>{
+    f_nome.value=""
+    f_portas.value=0
+    f_blindagem.value=0
+    f_municao.value=0
+    f_blindagem.setAttribute("disabled","disabled")
+    f_municao.setAttribute("disabled","disabled")
+})
+
+const exibirCarros=()=>{
+    painelCarros.innerHTML=""
+    carros.forEach((c)=>{
+        const div= document.createElement("div")
+        div.setAttribute("class","carro")
+        div.innerHTML=`Nome:${c.nome}<br> Portas:${c.portas}<br>Cor:${c.cor}<br>Blindagem:${c.blindagem}<br>Municação:${c.municao}`
+        painelCarros.appendChild(div)
+    })
+}
+
+btn_addCarro.addEventListener("click",()=>{
+    if(tipoNormal.checked){
+        const novoCarro=new Carro(f_nome.value,f_portas.value)
+        carros.push(novoCarro)
+    }else{
+        const novoCarro=new Militar(f_nome.value,f_portas.value,f_blindagem.value,f_municao.value)
+        carros.push(novoCarro)
+    }
+    exibirCarros()
 })
 
 class Carro{//Classe PAI / BASE
