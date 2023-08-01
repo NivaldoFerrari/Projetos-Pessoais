@@ -30,8 +30,14 @@ const exibirCarros=()=>{
     painelCarros.innerHTML=""
     carros.forEach((c)=>{
         const div= document.createElement("div")
+        const btn=document.createElement("button")
+        btn.innerHTML="Remover"
+        btn.addEventListener("click",()=>{
+            console.log("teste")
+        })
         div.setAttribute("class","carro")
         div.innerHTML=`Nome:${c.nome}<br> Portas:${c.portas}<br>Cor:${c.cor}<br>Blindagem:${c.blindagem}<br>Municação:${c.municao}`
+        div.appendChild(btn)
         painelCarros.appendChild(div)
     })
 }
