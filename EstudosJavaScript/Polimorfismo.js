@@ -3,12 +3,20 @@ class Carro{
     this.turbo=new Turbo(estagio)
     if(tipo == 1){
         this.vMax=120
+        this.nome="Normal"
     }else if(tipo == 2){
         this.vMax=160
+        this.nome="Esportivo"
     }else if(tipo == 3){
         this.vMax=200
+        this.nome="Super ESportivo"
     }
-    this.vMax+=this.turbo
+    this.vMax+=this.turbo.pot
+    }
+    info(){
+        console.log(this.nome)
+        console.log(this.vMax)
+        console.log(this.turbo)
     }
 }
 
@@ -25,3 +33,24 @@ class Turbo{
         }
     }
 }
+
+class CarroEspecial extends Carro{
+    constructor(estagio){
+        super(4,estagio)
+        this.vMax=300+this.turbo.pot
+        this.nome="Especial"
+    }
+    info(){
+        console.log(`Nome: ${this.nome}`)
+        console.log(`Vel.Max: ${this.vMax}`)
+        console.log(`Turbo: ${this.turbo.pot}`)
+    }
+}
+
+const c1=new Carro(1,0)
+const c2=new Carro(1,1)
+const c3=new CarroEspecial(3)
+
+c1.info()
+c2.info()
+c3.info()
