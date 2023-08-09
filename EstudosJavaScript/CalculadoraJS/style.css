@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    font-size: large;
+    align-items: center;
+}
+
+.calculadora{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+    
+.div_nome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div_display{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.div_teclas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    flex-wrap: wrap;
+}
+
+.tecla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #685f5f;
+    border: 3px solid black;
+    border-radius: 7px;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin: 1px;
+}
+
+.teclaOp{
+    background-color: blue!important;
+    color: white !important;
+}
