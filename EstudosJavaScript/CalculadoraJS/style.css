@@ -13,6 +13,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #c2bbbb;
+    border: 3px solid #5f5c5c;
+    width: 230px;
+    padding: 5px;
+    border-radius: 4px;
 }
     
 .div_nome{
@@ -52,3 +57,21 @@
     background-color: blue!important;
     color: white !important;
 }
+
+.div_display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 205px;
+    background-color: #968e8e;
+    border-radius: 6px;
+    margin: 3px;
+}
+
+.display{
+    width: 210px;
+    text-align: right;
+    padding: 5px;
+
+}
+
