@@ -5,6 +5,23 @@
     box-sizing: border-box;
     font-size: large;
     align-items: center;
+    background-color: #968e8e;
+    transition: all 0.2s;
+}
+
+.conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    left: 0px;
+    transition: all 0.2s;
+}
+
+.exibir{
+    left: -230px !important;
+    transition: all 0.2s;
 }
 
 .calculadora{
@@ -75,3 +92,17 @@
 
 }
 
+.abreFecha{
+    display: flex;
+    justify-content: center;
+    width: 70px;
+    height: 50px;
+    background-color: #685f5f;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+#indicador{
+    background-color: #685f5f;
+    
+}
