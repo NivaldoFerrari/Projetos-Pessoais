@@ -12,4 +12,4 @@ console.log((n1>n2)&&(n1>n3))//retorna true somente quando todas as afirmacoes s
 
 console.log((n1>n2)||(n1>n3))//retorna true quando alguma das afirmacoes sao true
 
-console.log(!((n1>n2)&&(n1>n3)))//inverte o retorno do true ou false
+console.log(!((n1>n2)&&(n1>n3)))// ! inverte o retorno do true ou false

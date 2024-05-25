@@ -13,7 +13,7 @@ const arraydiv=[dv1,dv2,dv3,dv4]
 
 console.log(arraydiv)
 
-arraydiv.map((e)=>{
+arraydiv.map((e)=>{//alterando os valores da propiedade inerhtml usando um map para percorrer o array
     console.log(e)
     e.innerHTML="Ferrari"
 })

@@ -14,8 +14,8 @@ console.log("Findo do break")
 let pares=0
 
 for(i=0;i < max;i++){
-    if(i%2!=0){
-        continue// faz com que o loop nao execute os comandos seguintes mais segue os proximos passos do loop
+    if(i%2!=0){// se o resto da divisao do i for diferente de 0, ou seja impar
+        continue// faz com que o loop nao execute os comandos seguintes mas segue os proximos passos do loop
     }
     pares++
 

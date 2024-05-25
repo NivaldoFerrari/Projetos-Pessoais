@@ -40,7 +40,7 @@ let res4=n1 << 1
 Em binario
 
  n1=1010    *Neste caso usando o << desloca o bit pra esquerda e adiciona um 0 no local
-n1=10100    *Dobrando na pratica o valor decimal do binario
+ n1=10100    *Dobrando na pratica o valor decimal do binario
 
 */
 console.log(res4)

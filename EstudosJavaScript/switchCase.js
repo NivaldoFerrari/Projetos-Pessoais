@@ -10,7 +10,7 @@ switch(colocacao){
     case 3:
         console.log("Terceiro Lugar")
         break
-    case 4: case 5: case 6:
+    case 4: case 5: case 6: // mesma resposta pro caso 4 5 6
         console.log("Premio de Participacao")
         break
     default:
@@ -19,3 +19,4 @@ switch(colocacao){
 
 
 }
+

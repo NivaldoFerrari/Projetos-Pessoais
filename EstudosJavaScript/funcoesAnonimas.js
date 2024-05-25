@@ -1,7 +1,7 @@
 const anonima=function(...valores){
     let res=0
-    for(valor of valores){
-        res+=valor
+    for(v of valores){
+        res+=v
     }
     return res
 }

@@ -1,6 +1,6 @@
 let v1=10
 let v2="10"
-let v3=v1===v2
+let v3=v1===v2 //v3 recebe o resultado da comparação de v1 e v2
 let v4={nome:"Nivaldo"}
 
 console.log("Valor: " + v1 + " - Tipo:  " + typeof(v1))// Retorna o tipo da variavel: nunber

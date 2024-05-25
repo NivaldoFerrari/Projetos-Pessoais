@@ -15,7 +15,7 @@ console.log(especial)
 const query_divs=document.querySelector("div")//Retona o primeiro elemento div
 console.log(query_divs)
 
-const query_divs2=[...document.querySelectorAll("div")]//Retona todos os elementos div
+const query_divs2=[...document.querySelectorAll("div")]//Retona todos os elementos div em um array por causa do ...
 
 console.log(query_divs2)
 

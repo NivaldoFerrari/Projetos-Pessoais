@@ -18,4 +18,11 @@ console.log(--n)
 
 console.log(n)
 
+// Operador de inversao
+
+let x=-n
+
+console.log(x)
+
+
 
